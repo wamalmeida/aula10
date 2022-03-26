@@ -1,0 +1,90 @@
+Começando a prática de condicionamento.
+
+CALCULADORA MUITO SIMPLES DE MÉDIA:
+nota1= float(input("Digita a nota do 1°bimestre: "))
+nota2= float(input("Digite a nota do 2°bimestre:"))
+nota3= float(input("Digite a nota do 3°bimeste: "))
+nota4= float(input("Digite a nota do 4°bimestre: "))
+media= (nota1+nota2+nota3+nota4)/4
+if media >=6:
+    print('Sua média foi: {}. Parabéns! você passou de ano.'.format(media))
+else:
+    print('Sua média foi {} e está abaixo. Voce ficou de recuperação!'.format(media))
+
+CRIE UM PROGRAMA ONDE O COMPUTADOR IRÁ ESCOLHER UM NÚMERO DE 1 A 5 E FAÇA O USUARIO DESCOBRIR QUAL FOI O NÚMERO ESCOLHIDO.
+O PROGRAMA DEVERÁ ESCREVER NA TELA SE O USUÁRIO ACERTOU OU NÃO O NÚMERO ESCOLHIDO PELA MÁQUINA!
+RESPOSTA:
+
+import random
+num= random.randint(1,5)
+num2=int(input('Escolha o número de 1 a 5 para saber se foi o mesmo que o computador pensou: '))
+if num == num2:
+    print("Parabéns! você acertou o número escolhido pelo computador!")
+else:
+    print("Que triste! este não foi o número escolhido pelo computador")
+print("O número escolhido pelo computador foi: {}".format(num))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
