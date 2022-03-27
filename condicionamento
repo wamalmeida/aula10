@@ -24,14 +24,84 @@ else:
     print("Que triste! este não foi o número escolhido pelo computador")
 print("O número escolhido pelo computador foi: {}".format(num))
 
+CRIE UM PROGRAMA QUE:
+Leia a velocidade de um carro e caso esteja acima de 80km/h aplique uma multa de R$7 por Km.
+
+Resposta:
+print("A velocidade máxima desta é rodovia é de 80KM/H.")
+velocidade= int(input('Qual a velocidade do carro? '))
+multa= (velocidade - 80)
+if velocidade > 80:
+    print('Você ultrapassou o limite de velocidade da rodovia e por isto foi foi multado em: {} reais!'.format(multa * 7))
+else:
+    print("Você estava dentro do limite de velocidade da rodovia!")
 
 
+CRIE UM PROGRAMA QUE:
+Leia um número qualquer e diga se ele é par ou impar
 
+RESPOSTA:
+num= int(input("Digite um número para saber se ele é par ou impar: "))
+num2= num % 2
+if num2 == 0:
+    print("Você digitou o número {}, e este é um numero par!".format(num))
+else:
+    print("Você digitou o número {}, e este é um número impar!".format(num))
 
+CRIE UM PROGRAMA QUE:
+Leia os valores de uma viajem de taxi e calcule o valor final a ser cobrado. tendo uma diferença na viagem dependo da km escolhida
 
+RESPOSTA:
+print("Esta é uma calculadora de taxi!")
+valorFixo= int(input("Qual o valor fixo para chamar o seu taxi? R$"))
+kmViagem= int(input("Quantos km de viagem?"))
 
+if kmViagem <= 200:
+    valorAte200=float(input("Qual o valor cobrado por km em uma viagem de até 200km? R$"))
+    print("A sua viajem custará um total de: R${}.".format(valorFixo + (valorAte200*kmViagem)))
+else:
+    valorAcima200= float(input("Qual o valor cobrado por km em uma viagem acima de 200km?"))
+    print("A sua viajem custará um total de: R${}.".format(valorFixo+(valorAcima200*kmViagem)))
 
+CRIE UM PROGRAMA QUE:
+Leia 3 valores e diga qual foi o maior valor digitado e o menor valor digitado
 
+RESPOSTA:
+print("Digite 3 valores e o programa dirá qual o maior e o menor número dos 3!")
+num1= int(input("Digite o primeiro valor: "))
+num2= int(input("Digite o segundo valor: "))
+num3= int(input("Digite o terceiro valor: "))
+if num1 > num2 and num1 > num3:
+    print("O maior valor digitado é: {}".format(num1))
+elif num1 < num2 and num1 < num3:
+    print("O menor digitado é: {}".format(num1))
+
+if num2 > num1 and num2 > num3:
+    print("O maior valor digitado é: {}".format(num2))
+elif num2 < num1 and num2 < num3:
+    print("O menor valor digitado é: {}".format(num2))
+
+if num3 > num2 and num3 > num1:
+    print("O maior valor digitado foi: {}".format(num3))
+elif num3 < num2 and num3 < num1:
+    print("O menor valor digitado foi: {}".format(num3))
+    
+
+CRIE UM PROGRAMA QUE:
+Leia o salário atual dos funcionários de uma empresa e aplique um aumento, caso o salário seja igual ou menor que 1250 o aumento deverá ser de 15%
+e se for maior que 1250, o aumento será de 10%.
+
+RESPOSTA:
+print("Esta é uma feramenta para calcular o aumento dos funcionários de uma empresa!\n"
+      "Caso o funcionário recebe um salário inferior a R$1250,00 terá um aumento de 15%\n"
+      "Caso o funcionário receba acima de R$1250,00 receberá um aumento de 10%")
+salario = float(input("Qual o valor do salário atual? R$"))
+if salario <= 1250:
+    print("O salário atual do funcionário é R${} e receberá um aumento de 15%,\n"
+          " Com isto, seu novo salário passa a ser R${}.".format(salario,salario+(salario/100)*15))
+else:
+    print('O salario atual do funcionário é R${} e receberá um aumento de 10%,\n'
+          'Com isto, seu novo salario passa a ser R${}.'.format(salario, salario+(salario/100)*10))
 
 
 
